@@ -1,0 +1,131 @@
+body {
+    width: 400px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#notesContainer {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* Adds space below each button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Khoảng cách giữa biểu tượng và văn bản */
+}
+
+button i {
+    font-size: 16px;
+}
+
+#saveNote { /* Specific styles for the 'Save Note' button */
+    background-color: #4CAF50; /* Green */
+}
+
+#saveNote:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#saveFile { /* Specific styles for the 'Save File' button */
+    background-color: #2196F3; /* Blue */
+}
+
+#saveFile:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
+#toggleNotes {
+    background-color: #1707ef;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#toggleNotes:hover {
+    background-color: #45a049;
+}
+
+#clearAllNotes {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#clearAllNotes:hover {
+    background-color: #e53935;
+}
+
+.note {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.note:hover {
+    background-color: #f1f1f1;
+}
+
+.deleteNote {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.deleteNote:hover {
+    background-color: #d32f2f;
+}
